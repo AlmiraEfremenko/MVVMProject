@@ -14,11 +14,11 @@ protocol Coordinator {
 }
 
 protocol Coordinating {
-    var coordinator: Coordinator { get set }
+    var coordinator: Coordinator? { get set }
 }
 
 final class AppCoordinator: Coordinator {
-    private (set) var childCoordinators: [Coordinator] = []
+    private(set) var childCoordinators: [Coordinator] = []
     private let window: UIWindow
     
     init(window: UIWindow) {
@@ -27,8 +27,10 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let navigationController = UINavigationController()
+        let listCoordinator = ListCoordinator(navigationController: navigationController)
+        listCoordinator.start()
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
-    
 }
+
