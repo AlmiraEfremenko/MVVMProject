@@ -26,8 +26,8 @@ final class ViewModelData: ViewModel {
          MVVMModel(firstName: "Зина", lastName: "Вирка", skillLevel: .junior, age: 29)
         ]
     
-    func tappedCell() {
-        coordinator?.eventOccured(with: .cellTapped)
+    public func tappedCell() {
+        coordinator?.eventOccurred(with: .cellTapped)
     }
     
     

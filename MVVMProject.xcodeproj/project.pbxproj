@@ -19,6 +19,7 @@
 		04FAC90D26EDFDE800A5C113 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAC90C26EDFDE800A5C113 /* ViewModel.swift */; };
 		04FAC90F26EE015200A5C113 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAC90E26EE015200A5C113 /* FirstViewController.swift */; };
 		04FAC91126EE016400A5C113 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAC91026EE016400A5C113 /* SecondViewController.swift */; };
+		04FAC91426EE59F300A5C113 /* MVVMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAC91326EE59F300A5C113 /* MVVMTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		04FAC90C26EDFDE800A5C113 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		04FAC90E26EE015200A5C113 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		04FAC91026EE016400A5C113 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		04FAC91326EE59F300A5C113 /* MVVMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		04FAC8E926EDE69500A5C113 /* MVVMProject */ = {
 			isa = PBXGroup;
 			children = (
+				04FAC91226EE59D700A5C113 /* View */,
 				04FAC90926EDFC9200A5C113 /* Model */,
 				04FAC90826EDFC8900A5C113 /* ViewModel */,
 				04FAC90626EDFC6A00A5C113 /* Controllers */,
@@ -115,6 +118,14 @@
 				04FAC90A26EDFCE800A5C113 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		04FAC91226EE59D700A5C113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04FAC91326EE59F300A5C113 /* MVVMTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				04FAC90026EDEE2A00A5C113 /* Coordinator.swift in Sources */,
 				04FAC8EF26EDE69500A5C113 /* ViewController.swift in Sources */,
 				04FAC8EB26EDE69500A5C113 /* AppDelegate.swift in Sources */,
+				04FAC91426EE59F300A5C113 /* MVVMTableViewCell.swift in Sources */,
 				04FAC91126EE016400A5C113 /* SecondViewController.swift in Sources */,
 				04FAC90F26EE015200A5C113 /* FirstViewController.swift in Sources */,
 				04FAC90B26EDFCE800A5C113 /* Model.swift in Sources */,

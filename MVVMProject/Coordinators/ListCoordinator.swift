@@ -8,32 +8,33 @@
 import Foundation
 import UIKit
 
-enum Event {
+enum EvenT {
     case cellTapped
 }
 
 class ListCoordinator: Coordinator {
     var navigationController: UINavigationController?
-    var childCoordinators: [Coordinator] = []
+    private(set) var childCoordinators: [Coordinator] = []
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func eventOccured(with type: Event) {
+    func eventOccurred(with type: EvenT) {
         switch type {
         case .cellTapped:
-            var viewControllers: UIViewController & Coordinator = Second
-        default:
-            <#code#>
+            var viewController: UIViewController & Coordinating = SecondViewController()
+            viewController.coordinator = self
+            navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
-    
     func start() {
-        <#code#>
+        let listViewModel = ViewModelData()
+        listViewModel.coordinator = self
+        let firstController = FirstViewController()
+        firstController.viewModel = listViewModel
+        navigationController?.setViewControllers([firstController], animated: true)
+        
     }
-    
-    
-    
 }
